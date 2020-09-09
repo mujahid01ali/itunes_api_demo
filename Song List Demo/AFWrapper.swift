@@ -1,0 +1,36 @@
+//
+//  AFWrapper.swift
+//  smartplaykid
+//
+//  Created by Mushareb Ali on 08/10/18.
+//  Copyright © 2018 Mushareb Ali. All rights reserved.
+//
+
+
+import Alamofire
+import AlamofireImage
+import AlamofireObjectMapper
+import ObjectMapper
+class AFWrapper: NSObject {
+   
+    
+    class func requestGETURL<T: Mappable>(url : String, params : [String : Any]?, success:@escaping (_ response: T) -> Void, failure:@escaping (Error) -> Void){
+        Alamofire.request(url, method : .get,parameters: params).responseObject { (response: DataResponse<T>) in
+            // UIApplication.shared.isNetworkActivityIndicatorVisible = false
+           
+            let responseResult = response.result.value
+            print("url : \(response.request!)" as Any)
+            switch response.result {
+            case .success:
+                success(responseResult!)
+                break;
+            case .failure(let error):
+                failure(error  )
+            
+                break;
+            }
+        }
+       
+
+    }
+}
