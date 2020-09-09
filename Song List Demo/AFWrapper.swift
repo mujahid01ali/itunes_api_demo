@@ -1,9 +1,9 @@
 //
 //  AFWrapper.swift
-//  smartplaykid
+//  Song List Demo
 //
-//  Created by Mushareb Ali on 08/10/18.
-//  Copyright © 2018 Mushareb Ali. All rights reserved.
+//  Created by Mujahid on 09/09/20.
+//  Copyright © 2020 Mujahid. All rights reserved.
 //
 
 
@@ -16,10 +16,8 @@ class AFWrapper: NSObject {
     
     class func requestGETURL<T: Mappable>(url : String, params : [String : Any]?, success:@escaping (_ response: T) -> Void, failure:@escaping (Error) -> Void){
         Alamofire.request(url, method : .get,parameters: params).responseObject { (response: DataResponse<T>) in
-            // UIApplication.shared.isNetworkActivityIndicatorVisible = false
-           
             let responseResult = response.result.value
-            print("url : \(response.request!)" as Any)
+
             switch response.result {
             case .success:
                 success(responseResult!)

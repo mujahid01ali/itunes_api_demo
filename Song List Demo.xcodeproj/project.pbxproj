@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0A84518125090D1400782362 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A84518025090D1400782362 /* MusicPlayer.swift */; };
 		0A8451832509312100782362 /* AFWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8451822509312100782362 /* AFWrapper.swift */; };
-		0A84518525093A2500782362 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A84518425093A2500782362 /* ActivityIndicatorView.swift */; };
 		0A84518725093C7E00782362 /* ViewTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A84518625093C7E00782362 /* ViewTypeModel.swift */; };
 		0A96B29A25087103003FBFCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A96B29925087103003FBFCC /* AppDelegate.swift */; };
 		0A96B29E25087103003FBFCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A96B29D25087103003FBFCC /* ViewController.swift */; };
@@ -33,7 +32,6 @@
 /* Begin PBXFileReference section */
 		0A84518025090D1400782362 /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		0A8451822509312100782362 /* AFWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFWrapper.swift; sourceTree = "<group>"; };
-		0A84518425093A2500782362 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		0A84518625093C7E00782362 /* ViewTypeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTypeModel.swift; sourceTree = "<group>"; };
 		0A96B29625087103003FBFCC /* Song List Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Song List Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A96B29925087103003FBFCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				0A96B2C22508C153003FBFCC /* DetailVC.swift */,
 				0A96B2C42508C190003FBFCC /* DetailTableCell.swift */,
 				0A96B2C52508C190003FBFCC /* DetailTableCell.xib */,
-				0A84518425093A2500782362 /* ActivityIndicatorView.swift */,
 			);
 			path = "Song List Demo";
 			sourceTree = "<group>";
@@ -272,7 +269,6 @@
 				0A96B2BB250874B7003FBFCC /* JsonString.swift in Sources */,
 				0A96B29A25087103003FBFCC /* AppDelegate.swift in Sources */,
 				0A84518725093C7E00782362 /* ViewTypeModel.swift in Sources */,
-				0A84518525093A2500782362 /* ActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

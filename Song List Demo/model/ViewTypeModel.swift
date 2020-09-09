@@ -1,9 +1,9 @@
 //
 //  ViewTypeModel.swift
-//  Original
+//  Song List Demo
 //
-//  Created by Mujahid Ali on 17/05/19.
-//  Copyright © 2019 Innobles. All rights reserved.
+//  Created by Mujahid on 09/09/20.
+//  Copyright © 2020 Mujahid. All rights reserved.
 //
 
 import UIKit
