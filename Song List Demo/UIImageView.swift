@@ -13,7 +13,7 @@ import AlamofireImage
 extension UIImageView {
     func imageFromRoundServerURL(urlString: String?,placeHolder:String? = "") {
         
-        self.image = UIImage(named: placeHolder ?? "placeholder")
+        self.image = UIImage(named: placeHolder ?? "")
         
         if(urlString != nil)
         {

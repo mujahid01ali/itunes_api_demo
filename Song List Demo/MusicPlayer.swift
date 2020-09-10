@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MusicPlayer.swift
 //  Song List Demo
 //
 //  Created by Mujahid on 09/09/20.
@@ -36,25 +36,6 @@ class MusicPlayer: NSObject {
     var delegate:MusicPlayerDelegate?
     var delegatePlayPause:MusicPlayerPlayPauseDelegate?
     var delegateProgress:MusicPlayerProgressDelegate?
-
-    func initPlayer(){
-        do {
-            UIApplication.shared.beginReceivingRemoteControlEvents()
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
-            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
-            print("AVAudioSession Category Playback OK")
-            do {
-                try AVAudioSession.sharedInstance().setActive(true)
-
-                print("AVAudioSession is Active")
-
-            } catch let error as NSError {
-                print(error.localizedDescription)
-            }
-        } catch let error as NSError {
-            print(error.localizedDescription)
-        }
-}
     
     
     func prepareSong(_ musicUrl:String?){
